@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('./images/background-gif-website-21.gif');
+  background-repeat: no-repeat;
+  background-size:cover
+}
+
+.app {
+  background-color: fff;
+  background: transparent;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 300px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: all 0.3s ease;
+}
+
+.app:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #c7ee1c;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+  height: 30px;
+  background: transparent;
+  color: white;
+}
+
+.task-form input:focus {
+  border-color: #0dca72;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: transparent;
+  color: #fff;
+  border: greenyellow;
+  
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #a1d429;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+.task.completed span {
+  text-decoration: line-through;
+  color: white
+}
+
+.task span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task span:hover {
+  color: #543e41;
+}
+
+.actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions .complete-btn {
+  background-color: #0e8f2c; /* Green */
+  color: #fff;
+  border-radius: 8px;
+}
+
+.actions .complete-btn:hover {
+  background-color: #4ff76b; /* Darker green */
+}
+
+.actions .incomplete-btn {
+  background-color: #f5d062; /* Yellow */
+  color: #fff;
+}
+
+.actions .incomplete-btn:hover {
+  background-color: #e0a800; /* Darker yellow */
+}
+
+.actions .edit-btn {
+  background-color: #e9fd37b4; /* Blue */
+  color: #fff;
+}
+
+.actions .edit-btn:hover {
+  background-color: #3bce6c; /* Darker blue */
+}
+
+.actions .delete-btn {
+  background-color: #b3414c; /* Red */
+  color: #fff;
+}
+
+.actions .delete-btn:hover {
+  background-color: #241c2d; /* Darker red */
+}
